@@ -1,0 +1,405 @@
+<html>
+
+<head>
+<title> E-commerce page product</title>
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<style>
+    *{margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: sans-serif;
+    }
+    img{
+        width: 100%;
+        display: block;
+        
+    }
+    .container{
+        width: 100vw;
+        margin: 0 auto;
+    }
+    
+    .products{
+        background: var(--aliceblue);
+        padding: 3.2rem 0;
+    }
+    .products .info{
+     text-align: center;
+     width: 70%;
+     margin: 0.3rem auto;
+    }
+    .lg-title,
+    .md-title,
+    .sm-title{
+        font-family: sans-serif;
+        padding: 0.6rem 0;
+        text-transform: capitalize;
+    }
+    .lg-title{
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 1.3rem 0;
+        opacity: 0.5;
+    }
+    .md-title{
+        font-size: 2rem;
+        font-family: sans-serif;
+    }
+    .sm-title{
+        font-weight: 300;
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    .Text-light{
+       font-size:18px;
+       font-weight: 600;
+       line-height: 1.5;
+       opacity: 0.5;
+       margin: 0.4rem 0;
+    }
+    .products{
+        background: var(--aliceblue);
+        margin: 3.2rem 0;
+    }
+    .products .Text-light{
+        text-align: center;
+        width: 70%;
+        margin: 0.3rem auto;
+    }
+    .product{
+        margin: 2rem;
+        position: relative;
+    
+    }
+    .product-content{
+     background: lightgray;
+     padding: 3rem 0.5rem  2rem 0.5rem;
+     cursor: pointer;
+     
+    }
+    .product-img{
+        background: white;
+        box-shadow: 0 0 20px 10px white;
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+        border-radius: 50%;
+        transition: background 0.5s ease;
+    }
+    .product-btns{
+        display: flex;
+        justify-content: center;
+        margin-top: 1.4rem;
+        opacity:1;
+        transition: opacity 0.5s ease;
+    }
+    .btn-cart ,.btn-buy{
+     background: transparent;
+     border: 1px solid black;
+     padding: 0.8rem 0;
+     width: 125px;
+     font-family: inherit;
+     text-transform:uppercase ;
+     cursor: pointer;
+     border: none;
+     transition: all 0.6s ease;
+    }
+    .btn-cart{
+        background-color: black;
+        color: white;
+    }
+    .btn-cart:hover{
+        background: aqua;
+    }
+    .btn-buy{
+        background-color: white;
+    }
+    .btn-buy:hover{
+        background: aqua;
+    }
+    .product-info{
+        background: white;
+        padding: 2rem;
+    }
+    .product-info-top{
+       display: flex;
+       justify-content: space-between; 
+       align-items: center;
+    }
+    .rating span{
+        color: cyan;
+        font-size: 20px;
+    }
+    .product-name{
+        color: black;
+        display: block;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .price{
+        padding-top: 0.6rem;
+        padding-right: 0.6rem;
+        display: inline-block;
+    }
+    .price:first-of-type{
+        text-decoration: line-through;
+        color: cyan;
+    }
+    .product-img img{
+        transition: tranform 0.6s ease;
+    }
+    .product:hover .product-img img{
+        transform: scale(1.1);
+    }
+    .product:hover .product-img{
+        background: cyan;
+    }
+    .product:hover .product-btns{
+        opacity: 1;
+    }
+    .off-info {
+        background: cyan;
+        color: white;
+        position: absolute;
+        padding: 0.5rem;
+        width: 90px;
+        top: 0;  
+        margin-top: 253px;
+        margin-left: 32px;
+  }
+
+  .off1-info{
+    background: cyan;
+    color: white;
+    position: absolute;
+    padding: 0.5rem;
+    width: 90px;
+    float: left;
+    top: 0;
+    margin-top:874px;
+    margin-left: 32px;
+  }
+  .off2-info{
+    background: cyan;
+    color: white;
+    position: absolute;
+    padding: 0.5rem;
+    float: left;
+    top: 0;
+    margin-top:1598px;
+    margin-left: 32px;
+  }
+  .off3-info{
+    background: cyan;
+    color: white;
+    position: absolute;
+    padding: 0.5rem;
+    top: 0;
+    margin-top:2219px;
+    margin-left: 32px;
+  }
+</style>
+</head>
+
+
+<body>
+<div class="products">
+    <div class="container">
+            <h1 class="lg-title"> Special shoes with Offers </h1>
+            <p class="Text-light">" Smart shoes Provide Personalized feedback to user to improve Performance" </p>
+
+    
+    <div class="product-items">
+        <div class="product">
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="https://img.freepik.com/free-photo/pair-trainers_144627-3800.jpg">
+    </div>
+    <div class="product-btns">
+        <button type="button" class="btn-cart"> Add to cart <span>  <i class="ri-add-line"></i></span></button>
+
+        <button type="button" class="btn-buy">Buy Now <span>  <i class="ri-shopping-cart-line"></i></span></button>
+            </div>
+            </div>
+
+            <div class="product-info">
+             <div class="product-info-top">
+                <h1> LifeStyle </h1>
+            <div class="Rating">
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span> <i class="ri-star-line"></i></span>
+                </div>   
+                </div>
+            <a href="#" class="product-name"> Mens shoes DN 23XX ,New Product </a>
+            <p class="price">$ 5000</p>
+            <p class="price">$ 3200</p>
+            </div>
+            </div>
+            <div class="off-info"><h3> 25%OFF </h3> 
+                </div>
+                </div>
+                </div>
+
+
+
+            
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="https://www.jiomart.com/images/product/original/rvuxtvcu3u/bruton-trendy-running-shoes-running-shoes-for-men-blue-product-images-rvuxtvcu3u-0-202207230426.jpg?im=Resize=(1000,1000)">
+                </div>
+                <div class="product-btns">
+                    <button type="button" class="btn-cart"> Add to cart <span>  <i class="ri-add-line"></i></span></button>
+            
+                    <button type="button" class="btn-buy">Buy Now <span>  <i class="ri-shopping-cart-line"></i></span></button>
+                        </div>
+                        </div>
+            
+                        <div class="product-info">
+                         <div class="product-info-top">
+                            <h1> LifeStyle </h1>
+                        <div class="Rating">
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span> <i class="ri-star-line"></i></span>
+                            </div>   
+                            </div>
+                        <a href="#" class="product-name"> Mens shoes DN 23XX ,New Product </a>
+                        <p class="price">$ 3000</p>
+                        <p class="price">$ 2000</p>
+                        </div>
+                        </div>
+                        <div class="off1-info"><h3> 15%OFF </h3> </div>
+                            </div>
+                </div>
+
+
+                
+                <div class="product-items">
+                    <div class="product">
+                        <div class="product-content">
+                            <div class="product-img">
+                                <img src="https://images.meesho.com/images/products/44009963/kxwus_512.jpg">
+                </div>
+                <div class="product-btns">
+                    <button type="button" class="btn-cart"> Add to cart <span>  <i class="ri-add-line"></i></span></button>
+            
+                    <button type="button" class="btn-buy">Buy Now <span>  <i class="ri-shopping-cart-line"></i></span></button>
+                        </div>
+                        </div>
+            
+                        <div class="product-info">
+                         <div class="product-info-top">
+                            <h1> LifeStyle </h1>
+                        <div class="Rating">
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span>  <i class="ri-star-fill"></i></span>
+                            <span> <i class="ri-star-line"></i></span>
+                            </div>   
+                            </div>
+                        <a href="#" class="product-name"> Mens shoes DN 23XX ,New Product </a>
+                        <p class="price">$ 3000</p>
+                        <p class="price">$ 2000</p>
+                        </div>
+                        </div>
+                        <div class="off2-info"><h3> 25%OFF </h3> </div>
+                            </div>
+                </div>
+</div>
+
+
+
+
+    <div class="product-items">
+        <div class="product">
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSkkKbVCHwNOYdd_RZ8s-XngL5xIan3zjSoA&usqp=CAU">
+    </div>
+    <div class="product-btns">
+        <button type="button" class="btn-cart"> Add to cart <span>  <i class="ri-add-line"></i></span></button>
+
+        <button type="button" class="btn-buy">Buy Now <span>  <i class="ri-shopping-cart-line"></i></span></button>
+            </div>
+            </div>
+
+            <div class="product-info">
+             <div class="product-info-top">
+                <h1> LifeStyle </h1>
+            <div class="Rating">
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span> <i class="ri-star-line"></i></span>
+                </div>   
+                </div>
+            <a href="#" class="product-name"> Mens shoes DN 23XX ,New Product </a>
+            <p class="price">$ 7000</p>
+            <p class="price">$ 6000</p>
+            </div>
+            </div>
+            <div class="off3-info"><h3> 50%OFF </h3> </div>
+                </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="product-items">
+        <div class="product">
+            <div class="product-content">
+                <div class="product-img">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSkkKbVCHwNOYdd_RZ8s-XngL5xIan3zjSoA&usqp=CAU">
+    </div>
+    <div class="product-btns">
+        <button type="button" class="btn-cart"> Add to cart <span>  <i class="ri-add-line"></i></span></button>
+
+        <button type="button" class="btn-buy">Buy Now <span>  <i class="ri-shopping-cart-line"></i></span></button>
+            </div>
+            </div>
+
+            <div class="product-info">
+             <div class="product-info-top">
+                <h1> LifeStyle </h1>
+            <div class="Rating">
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span>  <i class="ri-star-fill"></i></span>
+                <span> <i class="ri-star-line"></i></span>
+                </div>   
+                </div>
+            <a href="#" class="product-name"> Mens shoes DN 23XX ,New Product </a>
+            <p class="price">$ 10,000</p>
+            <p class="price">$ 8000</p>
+            </div>
+            </div>
+            <div class="off3-info"><h3> 50%OFF </h3> </div>
+                </div>
+            </div>
+
+    </div>
+    </div>
+    </div>
+    <body>
+    </html>
